@@ -1,0 +1,429 @@
+*{
+    font-size:16px;
+    scroll-behavior: smooth;
+}
+
+
+// follower circle styling starts here
+.circle {
+    width: 44px;
+    height: 44px;
+    position: absolute;
+    top: -22px;
+    left: -22px;
+    transform: translateX(-22px) translateY(-22px);
+    pointer-events: none;
+    z-index: 9999;
+    transition: opacity .6s ease-in-out;
+    background-color: #3f3e3ed7;
+    border-radius: 100%;
+    border: 2px solid #181818f6;
+    will-change: transform;
+}
+
+
+
+
+.hero-menu-container{
+    position: fixed;
+    top: 20%;
+    right:1%;
+    width:200px;
+    background-color: transparent;
+    padding-bottom: 25%;
+    z-index: 9999;
+
+    // hero links here
+
+    .home-link {
+        position:absolute;
+        height: 5px;
+        width:80px;
+        top:20%;
+        right:0%;
+        background-color: white;
+        transform-origin: top left;
+        transform: skew( -25deg, 0deg);
+    }
+
+    .about-us-link {
+        position:absolute;
+        height: 5px;
+        width:75px;
+        top:25%;
+        right:0%;
+        background-color: white;
+        transform-origin: top left;
+        transform: skew( -25deg, 0deg);
+    }
+
+    .status-link {
+        position:absolute;
+        height: 5px;
+        width:70px;
+        top:30%;
+        right:0%;
+        background-color: white;
+        transform-origin: top left;
+        transform: skew( -25deg, 0deg);
+    }
+
+    .cars-link {
+        position:absolute;
+        height: 5px;
+        width: 65px;
+        top:35%;
+        right:0%;
+        background-color: white;
+        transform-origin: top left;
+        transform: skew( -25deg, 0deg);
+    }
+
+    .contact-us-link {
+        position:absolute;
+        height: 5px;
+        width:60px;
+        top:40%;
+        right:0%;
+        background-color: white;
+        transform-origin: top left;
+        transform: skew( -25deg, 0deg);
+    }
+
+    .footer-link {
+        position:absolute;
+        height: 5px;
+        width: 55px;
+        top:45%;
+        right:0%;
+        background-color: white;
+        transform-origin: top left;
+        transform: skew( -25deg, 0deg);
+    }
+}
+
+.main-container {
+    height:100vh;
+    background-color: #191919;
+    position: relative;
+    padding:0;
+    margin:0;
+
+    .logo {
+        position: absolute;
+        top:2%;
+        left:(1em/16);
+        width:(160em/16);
+        height:(120em/16);
+    }
+
+    .fb-img {
+        position: absolute;
+        bottom:9%;
+        right:(19em/16);
+        width:(20em/16);
+        height:(20em/16);
+    }
+
+    .heading {
+        position:absolute;
+        top:40%;
+        left:40%;
+
+        h1 {
+            font-family: 'Libre Barcode 128 Text', cursive;
+            font-size: (150vw/16);
+            color:white;
+        }
+    }
+
+    .contact-us {
+        display: inline-block;
+        position:absolute;
+        transform: rotate(270deg);
+        top: 50%;
+        left:0%;
+      
+        a {
+            color: white;
+            z-index: 1;
+            transition:2s ease-in-out;
+            border-bottom: 0 solid white;
+            font-family: 'Rubik', sans-serif;
+
+            &:hover {
+              border-bottom: 1px solid white;
+            }
+        }
+    }
+
+    .vertical-line {
+        position: absolute;
+        width:(8em/16);
+        height:100%;
+        background-color: white;
+        left: 20%;
+        z-index: 0;
+    }
+    .vertical-social {
+        position:absolute;
+        width:(1em/16);
+        height:(90em/16);
+        background-color:#808080;
+        right:2%;
+        bottom:(90em/16);
+    }
+
+    .scroll-down-gif {
+        position: absolute;
+        bottom:5%;
+        left:(640em/16);
+        width:(208em/16);
+        height:(80em/16); 
+    }
+
+}
+
+
+
+
+.main-container-2 {
+    height:(400em/16);
+    width:100%;
+    background-color:#808080;
+    position: relative;
+
+    .dark-overlay {
+        position: absolute;
+        height:100%;
+        width: 35%;
+        left:0;
+        background-color: #6B6967;
+    }
+
+    .transparent-overlay {
+        position: absolute;
+        height:20%;
+        width: 40%;
+        top:(18em/16);
+        left:20%;
+        background-color: rgba(186, 183, 161, 0.733);
+    }
+
+    .vertical-quarter-line {
+        position:absolute;
+        width:(8em/16);
+        height:(97em/16);
+        background-color: white;
+        left:20%;
+        top:0;
+    }
+
+    .vertical-3-quarter-line {
+        position:absolute;
+        width:(8em/16);
+        height:(305em/16);
+        background-color: white;
+        right:10%;
+        bottom:0;
+    }
+
+    .horizontal-line-left {
+        position:absolute;
+        width:(130em/16);
+        height:(7em/16);
+        background-color: white;
+        left:20%;
+        top:(90em/16);
+    }
+
+    .horizontal-line-right {
+        position:absolute;
+        width:(130em/16);
+        height:(7em/16);
+        background-color: white;
+        left:80.42%;
+        top:(90em/16); 
+    }
+
+    .horizontal-line-middle {
+        position:absolute;
+        width:(50em/16);
+        height:(7em/16);
+        background-color: white;
+        right:45%;
+        top:(140em/16); 
+    }
+
+    .grey-div-header {
+        position: absolute;
+        font-family: 'Rubik', sans-serif;
+        top: (40em/16);
+        right:35%;
+        color:rgb(214, 211, 211);
+    }
+
+    .grey-div-para {
+        position: absolute;
+        font-family: 'Rubik', sans-serif;
+        top: (200em/16);
+        right:15%;
+        left:25%;
+        color:rgb(214, 211, 211);
+    }
+    
+}
+
+
+
+.main-container-3 {
+    position: relative;
+    height:(620em/16);
+    background-color: #b4b4b4;
+
+    .vertical-line-container-3 {
+        position:absolute;
+        width:(8em/16);
+        height:100%;
+        background-color: white;
+        right:10%;
+        top:0;
+    }
+
+    .container-overlay {
+        position: absolute;
+        left:0;
+        width:45%;
+        height:100%;
+        background-color: #3d4d50;
+    }
+
+    .border-overlay {
+        position: absolute;
+        width: (350em/16);
+        height:(300em/16);
+        z-index: 30;
+        top:(240em/16);
+        left:30%;
+        background-color: rgba(194, 188, 147, 0.856);
+    }
+
+    .image-container {
+        position: absolute;
+        width: (810em/16);
+        height:(450em/16);
+        background-image: url("/assets/img/2.jpg");
+        z-index: 20;
+        left:40%;
+        top:(90em/16);
+    }
+
+    .image-container-backview {
+        position: absolute;
+        width: (810em/16);
+        height:(450em/16);
+        background-color: rgb(186, 183, 161);
+        z-index: 10;
+        left:40%;
+        top:(90em/16);
+    }
+
+    .image-header {
+        position: absolute;
+        font-family: 'Rubik', sans-serif;
+        text-transform: uppercase;
+        color:white;
+        z-index: 40;
+        top:(240em/16);
+        left:34%;
+    }
+}
+
+.main-container-4 {
+    position: relative;
+    height:(620em/16);
+    background-color: #b4b4b4;
+    
+    .container-4-overlay {
+        position: absolute;
+        width: (250em/16);
+        height:(200em/16);
+        z-index: 30;
+        top:(200em/16);
+        right:10%;
+        background-color: rgba(194, 188, 147, 0.856);
+        padding:1%;
+
+        p {
+            color: #3d4d50;
+        }
+    }
+
+    .vertical-line-container-4 {
+        position:absolute;
+        width:(8em/16);
+        height:64.5%;
+        z-index: 40;
+        background-color: white;
+        right:10%;
+        top:0;
+    }
+
+    .merc-header {
+        position: absolute;
+        color: #afafaf;
+        font-size: (100em/16);
+        right:13%;
+        top:14%;
+
+    }
+
+    .merc-sub-header {
+        position: absolute;
+        color: white;
+        top:(180em/16);
+        right:11%;
+    }
+
+    .merc {
+        position: absolute;
+        height: 70%;
+        width:45%;
+        left:10%;
+        top:15%;
+    }
+
+}
+
+.main-container-5 {
+    position: relative;
+    height:(620em/16);
+    background-color: #615f5f;
+
+    .spinning-circle {
+        position: absolute;
+        top:50px;
+        left:60px;
+        background-color:blue;
+        width: 160px;
+        height:160px;
+        border-radius: 50%;
+        border-style: dotted;
+        border-color: orangered;
+    }
+}
+
+// animations
+
+.spin {
+    animation: spin 2s linear ease-in infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
